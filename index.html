@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<title>J Jamison Tompkins</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('background.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header {
+  background:black;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 20pt;
+}
+
+.textbox{
+	background: rgba(0, 0, 0, 0.5);
+}
+.calltoaction{
+  margin:auto;
+  padding: 20px;
+  font-size: 18pt;
+  color: white;
+  text-align:center;  
+  vertical-align: middle;
+}
+.box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+footer {
+	font-size:18pt;
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
+
+.button {
+font-size: 12pt;
+}
+
+img {
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;
+}
+
+/* PAYPAL PAYMENT FORM CODE */
+.pp-form	{ margin: auto; }
+.pp-input	{ margin: auto;}
+.pp-textarea	{ margin: auto; resize: none; font-size:14pt;}
+.pp-button 	{ margin: auto; }
+.pp-badge	{
+	float:center;
+		margin: auto;
+		}
+.pp-canvasarea	{
+	    margin:auto;
+		display: inline-block;
+		padding: 6px;
+		}
+.pp-formbox	{
+	float:center;
+		margin:auto;
+		font: normal 13pt arial, sans-serif;
+		padding: 0px 10px 0px 0px;
+		}
+.pp-clear-float	{ height: 1px; clear: both; margin:auto; }
+
+</style>
+
+</head>
+
+<body>
+	
+<div class="header">
+  <p>Welcome to J Jamison Tompkins Exotics</p>
+</div>
+
+<div class="">
+<div class="calltoaction">
+<br>
+<div class="textbox">
+<p>Hand turned wooden pens, from exotic woods found around the world.</p>
+</div>
+<br>
+<a
+  class="btn btn-primary"
+  href="#catalog"
+  role="button"
+  style="padding:10px;"
+>
+  Download PDF Catalog
+</a>
+<br><br>
+<a class="btn btn-primary" data-bs-toggle="collapse" href="#payment" role="button" aria-expanded="false" aria-controls="payment" style="padding:10px;">
+    Quick Payment Form
+</a>
+
+<br><br>
+<div class="textbox">
+<!-- START PAYPAL FORM -->
+<div class="collapse" id="payment">
+<p>Quick Payment Form</p>
+<p style="font-size: 14pt;">* Contact us prior to using this payment form if you are placing a new order.</p>
+<div class="pp-canvasarea">
+<div class="pp-form">
+<form name="payment_form" action="https://www.paypal.com/cgi-bin/webscr" method="post" class="pp-form">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="k6ruv@mac.com">
+<input type="hidden" name="item_name" value="Paypal Payment">
+<input type="hidden" name="return" value="https://www.jjamisontompkins.com/thank-you.html">
+<input type="hidden" name="no_note" value="1">
+<input type="hidden" name="currency_code" value="USD">
+Payment amount:<br>
+<input type="text" name="amount" value="" class="pp-input" maxlength="6" size="6"><br>
+<input type="hidden" name="on0" value="Payment Details">
+Payment notes:<br>
+<textarea name="os0" rows="4" class="pp-textarea" maxlength="200"></textarea><br>
+<input type="submit" name="PaypalPayment" value="Send Payment" class="pp-button btn btn-primary button" onclick="paymentValidation()"><br>
+</form>
+</div>
+<br>
+<div>
+<img src="paypal-badge.png" class="pp-badge" alt="Payments through Paypal">
+</div>
+<div class="pp-clear-float"></div>
+</div>
+</div>
+<!-- END PAYPAL FORM -->
+</div>
+
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+
+<footer>
+  <p>Have questions or ready to place an order? Contact<br>
+  <a href="mailto:jaytompkins@mac.com">jaytompkins@mac.com</a>
+  </p>
+</footer>
+
+</body>
+</html>
